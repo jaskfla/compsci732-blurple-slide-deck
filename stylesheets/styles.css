@@ -7,6 +7,7 @@
   * {
     font-family: inherit;
     font-size: inherit;
+    line-height: inherit;
     margin: 0;
     outline-offset: max(0.0625rem, 1px);
     padding: 0;
@@ -27,6 +28,7 @@
     hyphenate-limit-chars: auto 2 3;
     interpolate-size: allow-keywords;
     letter-spacing: 0;
+    line-height: 1.5;
     margin: 0;
     orphans: 2;
     overflow-wrap: break-word;
@@ -159,13 +161,11 @@
   sub {
     font-size: 100%;
     font-variant-position: sub;
-    line-height: inherit;
     vertical-align: baseline;
   }
   sup {
     font-size: 100%;
     font-variant-position: super;
-    line-height: inherit;
     vertical-align: baseline;
   }
 }
