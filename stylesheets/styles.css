@@ -230,7 +230,8 @@
     color: var(--discord-white);
     color-scheme: only dark;
     font-family: var(--font-body);
-    font-size: 6.5vmin; /* Terrible a11y! Never do this on a website */
+    /* Terrible a11y! Never do this on a website */
+    font-size: max(6.5vmin, 150%);
   }
 
   ::selection {
