@@ -117,6 +117,7 @@
   svg,
   video {
     display: block;
+    max-height: 100%;
     max-width: 100%;
     vertical-align: middle; /* If `display` value is overridden */
   }
@@ -361,5 +362,28 @@
     inset-inline-end: 0;
     position: absolute;
     z-index: calc(infinity);
+  }
+}
+
+@layer slide-templates {
+  main > div {
+    /* Single figure */
+    &:has(
+        > :is(
+            audio,
+            canvas,
+            embed,
+            iframe,
+            img,
+            object,
+            picture,
+            video
+          ):only-child
+      ) {
+      :is(audio, canvas, embed, iframe, img, object, video) {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
   }
 }
