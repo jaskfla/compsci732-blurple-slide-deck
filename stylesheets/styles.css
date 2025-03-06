@@ -232,6 +232,7 @@
     font-family: var(--font-body);
     /* Terrible a11y! Never do this on a website */
     font-size: max(6.5vmin, 150%);
+    font-weight: 450;
   }
 
   ::selection {
@@ -243,6 +244,21 @@
   pre,
   samp {
     font-family: var(--font-monospace);
+  }
+
+  h1 {
+    font-size: var(--s3);
+  }
+  h2 {
+    font-size: var(--s2);
+  }
+  h3 {
+    font-size: var(--s1);
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: var(--s0);
   }
 }
 
