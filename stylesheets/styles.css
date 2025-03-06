@@ -203,7 +203,7 @@
     --discord-legacy-actually-black: black;
 
     --font-body: "Bricolage Grotesque", system-ui, -apple-system,
-      BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Ubuntu, sans-serif;
+      BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
     --font-monospace: ui-monospace, monospace;
 
     --ratio: 1.2;
@@ -227,9 +227,10 @@
     --s11: calc(1rem * pow(var(--ratio), 11));
 
     background-color: var(--discord-legacy-dark-but-not-black);
-    color: var(--discord-white);
     color-scheme: only dark;
+    color: var(--discord-white);
     font-family: var(--font-body);
+    letter-spacing: 0.02em;
     /* Terrible a11y! Never do this on a website */
     font-size: max(6.5vmin, 150%);
     font-weight: 450;
