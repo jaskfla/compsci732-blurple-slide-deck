@@ -36,6 +36,41 @@
 
       <!-- Slide 4 -->
       <div>
+        <style>
+          @scope {
+            ul {
+              --flow-space: 0;
+              font-size: var(--s-2);
+              opacity: 50%;
+              block-size: 100%;
+              inline-size: 100%;
+              position: absolute;
+            }
+            li {
+              position: absolute;
+              inset-block-start: 50%;
+              inset-inline-start: 50%;
+              translate: -50% -50%;
+            }
+          }
+        </style>
+        <h2>Tooling</h2>
+        <ul role="list">
+          <li style="transform: translate(0, -2rem)">Biome</li>
+          <li style="transform: translate(4rem, 4.5rem)">branch protections</li>
+          <li style="transform: translate(-2rem, 1.5rem)">Docker</li>
+          <li style="transform: translate(6rem, 2.5rem)">GitHub Actions</li>
+          <li style="transform: translate(-3.5rem, 3.5rem)">Husky</li>
+          <li style="transform: translate(7rem, -0.5rem)">monorepo</li>
+          <li style="transform: translate(-7rem, -1.5rem)">pnpm</li>
+          <li style="transform: translate(-8rem, 2.5rem)">Prettier</li>
+          <li style="transform: translate(5rem, -3.5rem)">Supertest</li>
+          <li style="transform: translate(-5rem, -4rem)">Vitest</li>
+        </ul>
+      </div>
+
+      <!-- Slide 5 -->
+      <div>
         <picture>
           <source srcset="/assets/ci.avif" type="image/avif" />
           <source srcset="/assets/ci.png" type="image/png" />
