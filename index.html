@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
     <link rel="preload" href="/stylesheets/styles.css" as="style" crossorigin />
+    <link
+      rel="preload"
+      href="/assets/logotype~dark.svg"
+      as="image"
+      type="image/svg+xml"
+    />
     <link rel="preload" href="/scripts/engine.js" as="script" />
     <link
       rel="preload"
@@ -18,23 +24,26 @@
   </head>
   <body>
     <main>
-      <!-- Slide 1 -->
+      <div>
+        <picture>
+          <source srcset="/assets/logotype~dark.svg" type="image/svg+xml" />
+          <img decoding="async" src="/assets/logotype~dark.svg" />
+        </picture>
+      </div>
+
       <div>
         <h1>Blurple Canvas Web</h1>
         <p>Aaron, Emily, Henry, Jasper, Josh & Sam</p>
       </div>
 
-      <!-- Slide 2 -->
       <div>
         <h1>Slide 2</h1>
       </div>
 
-      <!-- Slide 3 -->
       <div>
         <h1>Slide 3</h1>
       </div>
 
-      <!-- Slide 4 -->
       <div>
         <style>
           @scope {
