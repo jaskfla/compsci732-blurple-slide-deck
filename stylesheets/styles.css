@@ -344,24 +344,7 @@
 		}
 	}
 
-	:is(
-			a,
-			blockquote,
-			code,
-			h1,
-			h2,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6,
-			label,
-			li,
-			ol,
-			p,
-			q,
-			ul
-		) {
+	:is(blockquote, code, h1, h2, h2, h3, h4, h5, h6, label, li, ol, p, q, ul) {
 		& + & {
 			margin-block-start: var(--flow-space, 1em);
 		}
