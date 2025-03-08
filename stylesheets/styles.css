@@ -237,6 +237,7 @@
 		--s11: calc(1rem * pow(var(--ratio), 11));
 
 		background-color: var(--discord-legacy-dark-but-not-black);
+		cursor: url(/assets/cursor.svg) 12 12, auto;
 		color-scheme: only dark;
 		color: var(--discord-white);
 		font-family: var(--font-body);
