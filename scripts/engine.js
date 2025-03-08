@@ -24,10 +24,10 @@ function showSlide() {
 /** Clean up right after the slide disappears. */
 function onSlideLeave(slideEl) {
 	// Stop playing video and rewind it for future use
-	if (slideEl.querySelector("video")) {
-		const el = slideEl.querySelector("video");
-		el.pause();
-		el.currentTime = 0;
+	const videoEl = slideEl.querySelector("video");
+	if (videoEl) {
+		videoEl.pause();
+		videoEl.currentTime = 0;
 	}
 
 	// Unload the iframe for better performance
@@ -37,8 +37,8 @@ function onSlideLeave(slideEl) {
 		iframeEl.classList.remove("loaded");
 	}
 
-	slideEl.getAttribute("onslideleave") &&
-		eval(slideEl.getAttribute("onslideleave"));
+	const onLeave = slideEl.dataset.onSlideLeave;
+	onLeave && eval(onLeave);
 }
 
 /** Load iframe on a given slide, if any */
