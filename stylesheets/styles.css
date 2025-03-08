@@ -415,5 +415,19 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 		}
+
+		/* Heading and bullets */
+		&:has(> :not(style):first-of-type:is(h2, h3)):has(
+				> :not(style):last-of-type:is(ol, ul)
+			) {
+			display: grid;
+			grid-template-columns: repeat(2, 50%);
+			text-align: start;
+			justify-items: stretch;
+
+			> :is(ul, ol) {
+				margin-block-start: 0;
+			}
+		}
 	}
 }
