@@ -256,8 +256,8 @@
 		text-decoration-color: transparent;
 		text-decoration-line: none;
 		transform: scale(1);
-		transition-property: text-decoration-color, text-shadow, transform;
 		transition: 250ms ease;
+		transition-property: text-decoration-color, text-shadow, transform;
 		&:hover {
 			text-decoration-color: oklch(from currentcolor l c h / 30%);
 			text-decoration-line: underline;
@@ -340,7 +340,7 @@
 
 	:is(blockquote, code, h1, h2, h2, h3, h4, h5, h6, label, li, ol, p, q, ul) {
 		& + & {
-			margin-block-start: var(--flow-space, 0.512em);
+			margin-block-start: var(--flow-space, 0.4096em);
 		}
 	}
 
@@ -413,21 +413,32 @@
 					)
 			) {
 			display: grid;
+			gap: var(--s0);
 			grid-template-columns: repeat(2, 1fr);
 		}
 
-		/* Heading and bullets */
+		/* Major heading and bullets */
 		&:has(> :not(style):first-of-type:is(h2, h3)):has(
 				> :not(style):last-of-type:is(ol, ul)
 			) {
+			align-items: stretch;
 			display: grid;
+			gap: var(--s0);
 			grid-template-columns: repeat(2, 50%);
-			text-align: start;
 			justify-items: stretch;
+			text-align: start;
 
 			> :is(ul, ol) {
 				margin-block-start: 0;
 			}
+		}
+
+		/* Minor heading and bullets */
+		&:has(> :not(style):first-of-type:is(h4, h5, h6)):has(
+				> :not(style):last-of-type:is(ol, ul)
+			) {
+			align-items: stretch;
+			text-align: start;
 		}
 	}
 }
