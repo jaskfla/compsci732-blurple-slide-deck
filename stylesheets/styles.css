@@ -211,6 +211,7 @@
 		--discord-legacy-not-quite-black: oklch(26.99% 0.008 240.16);
 		--discord-legacy-actually-black: black;
 
+		--ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
 		--font-body: "Bricolage Grotesque", system-ui, -apple-system,
 			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
 		--font-monospace: ui-monospace, monospace;
@@ -362,6 +363,26 @@
 		inset-inline-end: 0;
 		position: absolute;
 		z-index: calc(infinity);
+	}
+
+	.indicator {
+		aspect-ratio: 3 / 2;
+		background-color: var(--discord-yellow);
+		block-size: 12px;
+		border: 1px solid oklch(100% 0 0 / 50%);
+		border-radius: calc(infinity * 1px);
+		inset-block-start: calc(env(safe-area-inset-left, 0) + var(--s1));
+		inset-inline-start: calc(env(safe-area-inset-top, 0) + var(--s1));
+		position: absolute;
+		z-index: calc(infinity);
+		opacity: 0;
+
+		&.👀 {
+			opacity: 30%;
+		}
+		&:not(.👀) {
+			transition: opacity 500ms var(--ease-out-cubic);
+		}
 	}
 }
 
