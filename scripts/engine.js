@@ -45,7 +45,7 @@ function onSlideLeave(slideEl) {
 function loadIframes(slideEl) {
 	const iframeEl = slideEl.querySelector("iframe");
 	if (iframeEl && !iframeEl?.classList.contains("loaded")) {
-		iframeEl.src = slideEl.querySelector("iframe").getAttribute("data-src");
+		iframeEl.src = slideEl.querySelector("iframe").dataset.src;
 		iframeEl.classList.add("loaded");
 	}
 }
@@ -164,7 +164,7 @@ function getSlideNumberFromUrlFragment() {
 
 /** Get unique ID identifying special slides. */
 function getCurrentSlideId() {
-	return slideEls[currentSlideNumber].getAttribute("data-slide-id");
+	return slideEls[currentSlideNumber].dataset.slideId;
 }
 
 /**
