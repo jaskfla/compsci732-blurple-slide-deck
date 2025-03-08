@@ -384,7 +384,7 @@
 	main > div:not(.custom-template) {
 		/* Single figure */
 		&:has(
-				> :not(style):nth-of-type(1):last-of-type:is(
+				> :not(style):first-of-type:last-of-type:is(
 						canvas,
 						embed,
 						iframe,
@@ -415,6 +415,23 @@
 			display: grid;
 			gap: var(--s0);
 			grid-template-columns: repeat(2, 1fr);
+		}
+
+		/* Heading and figure */
+		&:has(> :not(style):first-of-type:is(h1, h2, h3, h4, h5, h6)):has(
+				> :not(style):last-of-type:is(
+						canvas,
+						embed,
+						iframe,
+						img,
+						object,
+						picture,
+						video
+					)
+			) {
+			display: grid;
+			gap: var(--s-6);
+			grid-template-rows: minmax(0, auto) minmax(0, 1fr);
 		}
 
 		/* Major heading and bullets */
