@@ -1,389 +1,389 @@
 @layer remedy {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  * {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
-    outline-offset: max(0.0625rem, 1px);
-    padding: 0;
-    text-decoration-thickness: from-font;
-  }
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	* {
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		margin: 0;
+		outline-offset: max(0.0625rem, 1px);
+		padding: 0;
+		text-decoration-thickness: from-font;
+	}
 
-  :root {
-    color-scheme: light dark;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
-    font-kerning: normal;
-    font-optical-sizing: auto;
-    -webkit-font-smoothing: antialiased;
-    font-synthesis: none;
-    font-variant-ligatures: common-ligatures no-discretionary-ligatures
-      no-historical-ligatures contextual;
-    hanging-punctuation: first allow-end last;
-    hyphenate-character: "‐"; /* Unambiguous hyphen U+2010 */
-    hyphenate-limit-chars: auto 2 3;
-    interpolate-size: allow-keywords;
-    letter-spacing: 0;
-    line-height: 1.5;
-    margin: 0;
-    orphans: 2;
-    overflow-wrap: break-word;
-    padding: 0;
-    print-color-adjust: exact;
-    tab-size: 2;
-    text-align: start;
-    text-decoration-skip-ink: auto;
-    text-rendering: optimizeLegibility;
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    text-underline-position: from-font;
-    text-wrap: balance;
-    @media (prefers-reduced-motion: no-preference) {
-      scroll-behavior: smooth;
-    }
-  }
-  [hidden] {
-    display: none;
-  }
-  body {
-    inline-size: 100%;
-    min-block-size: 100dvb;
-  }
-  ul:not([role="list"]) {
-    list-style-type: disc;
-  }
-  :is(ol, ul):not([role="list"]) {
-    padding-inline-start: 1em;
-  }
-  :is(ol, ul)[role="list"] {
-    list-style-type: none;
-  }
-  b,
-  strong {
-    font-weight: bolder;
-  }
-  em,
-  i,
-  var {
-    font-style: italic;
-  }
-  :is(em, i) > :is(em, i) {
-    font-style: normal;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1.15;
-  }
-  code,
-  kbd,
-  pre,
-  samp {
-    font-family: ui-monospace, monospace;
-    hyphens: none;
-    text-align: start;
-    word-spacing: normal;
-    word-wrap: normal;
-  }
-  pre:has(code) {
-    max-inline-size: 100%;
-    overflow-x: auto;
-    overflow-inline: auto;
-    inline-size: max-content;
-  }
-  abbr {
-    text-decoration: none;
-  }
-  hr {
-    border-inline: 0;
-    box-sizing: content-box;
-    height: 0;
-  }
-  canvas,
-  embed,
-  figure,
-  iframe,
-  img,
-  object,
-  picture,
-  svg,
-  video {
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
-    vertical-align: middle; /* If `display` value is overridden */
-  }
-  img {
-    background-repeat: no-repeat; /* If providing low-res preview via `style` attribute */
-    background-size: cover;
-    height: auto;
-    shape-margin: 1rem; /* If floated */
-  }
-  img[alt] {
-    font-style: italic;
-  }
-  canvas,
-  img,
-  picture,
-  svg,
-  video {
-    border-style: none;
-    height: auto;
-  }
-  picture {
-    display: contents;
-  }
-  source {
-    display: none;
-  }
-  fieldset {
-    border: 0;
-    min-inline-size: 0;
-  }
-  input,
-  textarea {
-    hanging-punctuation: none;
-  }
-  input,
-  button,
-  textarea,
-  select {
-    touch-action: manipulation;
-  }
-  small {
-    font-size: 0.85em;
-  }
-  math,
-  td,
-  time[datetime*=":"],
-  var {
-    font-variant-numeric: lining-nums slashed-zero tabular-nums;
-  }
-  sub {
-    font-size: 100%;
-    font-variant-position: sub;
-    vertical-align: baseline;
-  }
-  sup {
-    font-size: 100%;
-    font-variant-position: super;
-    vertical-align: baseline;
-  }
+	:root {
+		color-scheme: light dark;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter, sans-serif;
+		font-kerning: normal;
+		font-optical-sizing: auto;
+		-webkit-font-smoothing: antialiased;
+		font-synthesis: none;
+		font-variant-ligatures: common-ligatures no-discretionary-ligatures
+			no-historical-ligatures contextual;
+		hanging-punctuation: first allow-end last;
+		hyphenate-character: "‐"; /* Unambiguous hyphen U+2010 */
+		hyphenate-limit-chars: auto 2 3;
+		interpolate-size: allow-keywords;
+		letter-spacing: 0;
+		line-height: 1.5;
+		margin: 0;
+		orphans: 2;
+		overflow-wrap: break-word;
+		padding: 0;
+		print-color-adjust: exact;
+		tab-size: 2;
+		text-align: start;
+		text-decoration-skip-ink: auto;
+		text-rendering: optimizeLegibility;
+		-moz-text-size-adjust: none;
+		-webkit-text-size-adjust: none;
+		text-size-adjust: none;
+		text-underline-position: from-font;
+		text-wrap: balance;
+		@media (prefers-reduced-motion: no-preference) {
+			scroll-behavior: smooth;
+		}
+	}
+	[hidden] {
+		display: none;
+	}
+	body {
+		inline-size: 100%;
+		min-block-size: 100dvb;
+	}
+	ul:not([role="list"]) {
+		list-style-type: disc;
+	}
+	:is(ol, ul):not([role="list"]) {
+		padding-inline-start: 1em;
+	}
+	:is(ol, ul)[role="list"] {
+		list-style-type: none;
+	}
+	b,
+	strong {
+		font-weight: bolder;
+	}
+	em,
+	i,
+	var {
+		font-style: italic;
+	}
+	:is(em, i) > :is(em, i) {
+		font-style: normal;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 1.15;
+	}
+	code,
+	kbd,
+	pre,
+	samp {
+		font-family: ui-monospace, monospace;
+		hyphens: none;
+		text-align: start;
+		word-spacing: normal;
+		word-wrap: normal;
+	}
+	pre:has(code) {
+		max-inline-size: 100%;
+		overflow-x: auto;
+		overflow-inline: auto;
+		inline-size: max-content;
+	}
+	abbr {
+		text-decoration: none;
+	}
+	hr {
+		border-inline: 0;
+		box-sizing: content-box;
+		height: 0;
+	}
+	canvas,
+	embed,
+	figure,
+	iframe,
+	img,
+	object,
+	picture,
+	svg,
+	video {
+		display: block;
+		max-height: 100%;
+		max-width: 100%;
+		vertical-align: middle; /* If `display` value is overridden */
+	}
+	img {
+		background-repeat: no-repeat; /* If providing low-res preview via `style` attribute */
+		background-size: cover;
+		height: auto;
+		shape-margin: 1rem; /* If floated */
+	}
+	img[alt] {
+		font-style: italic;
+	}
+	canvas,
+	img,
+	picture,
+	svg,
+	video {
+		border-style: none;
+		height: auto;
+	}
+	picture {
+		display: contents;
+	}
+	source {
+		display: none;
+	}
+	fieldset {
+		border: 0;
+		min-inline-size: 0;
+	}
+	input,
+	textarea {
+		hanging-punctuation: none;
+	}
+	input,
+	button,
+	textarea,
+	select {
+		touch-action: manipulation;
+	}
+	small {
+		font-size: 0.85em;
+	}
+	math,
+	td,
+	time[datetime*=":"],
+	var {
+		font-variant-numeric: lining-nums slashed-zero tabular-nums;
+	}
+	sub {
+		font-size: 100%;
+		font-variant-position: sub;
+		vertical-align: baseline;
+	}
+	sup {
+		font-size: 100%;
+		font-variant-position: super;
+		vertical-align: baseline;
+	}
 }
 
 @layer base {
-  @font-face {
-    /* https://ateliertriay.github.io/bricolage */
-    font-family: "Bricolage Grotesque";
-    font-style: normal;
-    font-stretch: 75% 100%;
-    font-width: 75% 100%;
-    font-weight: 200 800;
-    src: url("/fonts/bricolage.woff2") format("woff2");
-  }
+	@font-face {
+		/* https://ateliertriay.github.io/bricolage */
+		font-family: "Bricolage Grotesque";
+		font-style: normal;
+		font-stretch: 75% 100%;
+		font-width: 75% 100%;
+		font-weight: 200 800;
+		src: url("/fonts/bricolage.woff2") format("woff2");
+	}
 
-  * {
-    font-feature-settings: "case" var(--ot-case, off),
-      "sinf" var(--ot-sinf, off);
-    font-variation-settings: "wdth" var(--ot-wdth);
-  }
+	* {
+		font-feature-settings: "case" var(--ot-case, off),
+			"sinf" var(--ot-sinf, off);
+		font-variation-settings: "wdth" var(--ot-wdth);
+	}
 
-  :root {
-    --discord-blurple: oklch(57.74% 0.209 273.85);
-    --discord-green: oklch(85.48% 0.197 150.16);
-    --discord-yellow: oklch(92.18% 0.157 99.87);
-    --discord-fuchsia: oklch(65.34% 0.217 351.92);
-    --discord-red: oklch(63.18% 0.207 24.57);
-    --discord-white: white;
-    --discord-black: black;
-    --discord-legacy-blurple: oklch(64.74% 0.124 270.62);
-    --discord-legacy-full-white: white;
-    --discord-legacy-greyple: oklch(72.83% 0.025 236.13);
-    --discord-legacy-dark-but-not-black: oklch(30.38% 0.008 255.56);
-    --discord-legacy-not-quite-black: oklch(26.99% 0.008 240.16);
-    --discord-legacy-actually-black: black;
+	:root {
+		--discord-blurple: oklch(57.74% 0.209 273.85);
+		--discord-green: oklch(85.48% 0.197 150.16);
+		--discord-yellow: oklch(92.18% 0.157 99.87);
+		--discord-fuchsia: oklch(65.34% 0.217 351.92);
+		--discord-red: oklch(63.18% 0.207 24.57);
+		--discord-white: white;
+		--discord-black: black;
+		--discord-legacy-blurple: oklch(64.74% 0.124 270.62);
+		--discord-legacy-full-white: white;
+		--discord-legacy-greyple: oklch(72.83% 0.025 236.13);
+		--discord-legacy-dark-but-not-black: oklch(30.38% 0.008 255.56);
+		--discord-legacy-not-quite-black: oklch(26.99% 0.008 240.16);
+		--discord-legacy-actually-black: black;
 
-    --font-body: "Bricolage Grotesque", system-ui, -apple-system,
-      BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
-    --font-monospace: ui-monospace, monospace;
+		--font-body: "Bricolage Grotesque", system-ui, -apple-system,
+			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
+		--font-monospace: ui-monospace, monospace;
 
-    --ratio: 1.2;
-    --s-6: calc(1rem * pow(var(--ratio), -6));
-    --s-5: calc(1rem * pow(var(--ratio), -5));
-    --s-4: calc(1rem * pow(var(--ratio), -4));
-    --s-3: calc(1rem * pow(var(--ratio), -3));
-    --s-2: calc(1rem * pow(var(--ratio), -2));
-    --s-1: calc(1rem * pow(var(--ratio), -1));
-    --s0: 1rem;
-    --s1: calc(1rem * pow(var(--ratio), 1));
-    --s2: calc(1rem * pow(var(--ratio), 2));
-    --s3: calc(1rem * pow(var(--ratio), 3));
-    --s4: calc(1rem * pow(var(--ratio), 4));
-    --s5: calc(1rem * pow(var(--ratio), 5));
-    --s6: calc(1rem * pow(var(--ratio), 6));
-    --s7: calc(1rem * pow(var(--ratio), 7));
-    --s8: calc(1rem * pow(var(--ratio), 8));
-    --s9: calc(1rem * pow(var(--ratio), 9));
-    --s10: calc(1rem * pow(var(--ratio), 10));
-    --s11: calc(1rem * pow(var(--ratio), 11));
+		--ratio: 1.2;
+		--s-6: calc(1rem * pow(var(--ratio), -6));
+		--s-5: calc(1rem * pow(var(--ratio), -5));
+		--s-4: calc(1rem * pow(var(--ratio), -4));
+		--s-3: calc(1rem * pow(var(--ratio), -3));
+		--s-2: calc(1rem * pow(var(--ratio), -2));
+		--s-1: calc(1rem * pow(var(--ratio), -1));
+		--s0: 1rem;
+		--s1: calc(1rem * pow(var(--ratio), 1));
+		--s2: calc(1rem * pow(var(--ratio), 2));
+		--s3: calc(1rem * pow(var(--ratio), 3));
+		--s4: calc(1rem * pow(var(--ratio), 4));
+		--s5: calc(1rem * pow(var(--ratio), 5));
+		--s6: calc(1rem * pow(var(--ratio), 6));
+		--s7: calc(1rem * pow(var(--ratio), 7));
+		--s8: calc(1rem * pow(var(--ratio), 8));
+		--s9: calc(1rem * pow(var(--ratio), 9));
+		--s10: calc(1rem * pow(var(--ratio), 10));
+		--s11: calc(1rem * pow(var(--ratio), 11));
 
-    background-color: var(--discord-legacy-dark-but-not-black);
-    color-scheme: only dark;
-    color: var(--discord-white);
-    font-family: var(--font-body);
-    letter-spacing: 0.02em;
-    /* Terrible a11y! Never do this on a website */
-    font-size: max(6.5vmin, 150%);
-    font-weight: 450;
-  }
+		background-color: var(--discord-legacy-dark-but-not-black);
+		color-scheme: only dark;
+		color: var(--discord-white);
+		font-family: var(--font-body);
+		letter-spacing: 0.02em;
+		/* Terrible a11y! Never do this on a website */
+		font-size: max(6.5vmin, 150%);
+		font-weight: 450;
+	}
 
-  ::selection {
-    background-color: transparent;
-  }
+	::selection {
+		background-color: transparent;
+	}
 
-  code,
-  kbd,
-  pre,
-  samp {
-    font-family: var(--font-monospace);
-  }
+	code,
+	kbd,
+	pre,
+	samp {
+		font-family: var(--font-monospace);
+	}
 
-  h1 {
-    font-size: var(--s3);
-  }
-  h2 {
-    font-size: var(--s2);
-  }
-  h3 {
-    font-size: var(--s1);
-  }
-  h4,
-  h5,
-  h6 {
-    font-size: var(--s0);
-  }
+	h1 {
+		font-size: var(--s3);
+	}
+	h2 {
+		font-size: var(--s2);
+	}
+	h3 {
+		font-size: var(--s1);
+	}
+	h4,
+	h5,
+	h6 {
+		font-size: var(--s0);
+	}
 }
 
 @layer slides {
-  main {
-    opacity: 0;
-    transition: opacity 200ms ease;
-    &.👀 {
-      opacity: 1;
-    }
-  }
+	main {
+		opacity: 0;
+		transition: opacity 200ms ease;
+		&.👀 {
+			opacity: 1;
+		}
+	}
 
-  main > div {
-    --_padding: 1rem;
-    block-size: 100vb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    inline-size: 100%;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    overflow: hidden;
-    padding-bottom: calc(
-      1.5 * max(env(safe-area-inset-bottom), var(--_padding))
-    );
-    padding-left: max(env(safe-area-inset-left), var(--_padding));
-    padding-right: max(env(safe-area-inset-right), var(--_padding));
-    padding-top: max(env(safe-area-inset-top), var(--_padding));
-    position: absolute;
-    text-align: center;
-    transition: opacity 200ms ease;
+	main > div {
+		--_padding: 1rem;
+		block-size: 100vb;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		inline-size: 100%;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		overflow: hidden;
+		padding-bottom: calc(
+			1.5 * max(env(safe-area-inset-bottom), var(--_padding))
+		);
+		padding-left: max(env(safe-area-inset-left), var(--_padding));
+		padding-right: max(env(safe-area-inset-right), var(--_padding));
+		padding-top: max(env(safe-area-inset-top), var(--_padding));
+		position: absolute;
+		text-align: center;
+		transition: opacity 200ms ease;
 
-    &:not(.👀) {
-      overflow: hidden;
-      pointer-events: none;
-      white-space: nowrap;
-      opacity: 0;
-    }
+		&:not(.👀) {
+			overflow: hidden;
+			pointer-events: none;
+			white-space: nowrap;
+			opacity: 0;
+		}
 
-    &.👀 {
-      visibility: visible;
-      pointer-events: auto;
-    }
+		&.👀 {
+			visibility: visible;
+			pointer-events: auto;
+		}
 
-    > :is(iframe, img) {
-      inset-block-start: 0;
-      inset-inline-start: 0;
-      position: absolute;
-    }
+		> :is(iframe, img) {
+			inset-block-start: 0;
+			inset-inline-start: 0;
+			position: absolute;
+		}
 
-    > iframe {
-      block-size: 100%;
-      inline-size: 100%;
-    }
-  }
+		> iframe {
+			block-size: 100%;
+			inline-size: 100%;
+		}
+	}
 
-  :is(
-      a,
-      blockquote,
-      code,
-      h1,
-      h2,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      label,
-      li,
-      ol,
-      p,
-      q,
-      ul
-    ) {
-    & + & {
-      margin-block-start: var(--flow-space, 1em);
-    }
-  }
+	:is(
+			a,
+			blockquote,
+			code,
+			h1,
+			h2,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			label,
+			li,
+			ol,
+			p,
+			q,
+			ul
+		) {
+		& + & {
+			margin-block-start: var(--flow-space, 1em);
+		}
+	}
 
-  /*
+	/*
 	 * A little rectangle in the bottom right corner used to regain focus from
    * iframes, and also as a resting place for mouse pointer.
 	 */
-  .cursor-resting-area {
-    background: transparent;
-    block-size: 20vmin;
-    cursor: none;
-    inline-size: 20vmin;
-    inset-block-end: 0;
-    inset-inline-end: 0;
-    position: absolute;
-    z-index: calc(infinity);
-  }
+	.cursor-resting-area {
+		background: transparent;
+		block-size: 20vmin;
+		cursor: none;
+		inline-size: 20vmin;
+		inset-block-end: 0;
+		inset-inline-end: 0;
+		position: absolute;
+		z-index: calc(infinity);
+	}
 }
 
 @layer slide-templates {
-  main > div {
-    /* Single figure */
-    &:has(
-        > :is(
-            audio,
-            canvas,
-            embed,
-            iframe,
-            img,
-            object,
-            picture,
-            video
-          ):only-child
-      ) {
-      :is(audio, canvas, embed, iframe, img, object, video) {
-        object-fit: contain;
-        object-position: center;
-      }
-    }
-  }
+	main > div {
+		/* Single figure */
+		&:has(
+				> :is(
+						audio,
+						canvas,
+						embed,
+						iframe,
+						img,
+						object,
+						picture,
+						video
+					):only-child
+			) {
+			:is(audio, canvas, embed, iframe, img, object, video) {
+				object-fit: contain;
+				object-position: center;
+			}
+		}
+	}
 }

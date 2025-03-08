@@ -1,108 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
-    <link rel="preload" href="/stylesheets/styles.css" as="style" crossorigin />
-    <link
-      rel="preload"
-      href="/assets/logotype~dark.svg"
-      as="image"
-      type="image/svg+xml"
-    />
-    <link rel="preload" href="/scripts/engine.js" as="script" />
-    <link
-      rel="preload"
-      href="/fonts/bricolage.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" media="all" href="/stylesheets/styles.css" />
-    <script src="/scripts/engine.js" defer></script>
-    <title>COMPSCI 732: Blurple Canvas Web</title>
-  </head>
-  <body>
-    <main>
-      <div>
-        <picture>
-          <source srcset="/assets/logotype~dark.svg" type="image/svg+xml" />
-          <img decoding="async" src="/assets/logotype~dark.svg" />
-        </picture>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+		<link rel="preload" href="/stylesheets/styles.css" as="style" crossorigin />
+		<link
+			rel="preload"
+			href="/assets/logotype~dark.svg"
+			as="image"
+			type="image/svg+xml"
+		/>
+		<link rel="preload" href="/scripts/engine.js" as="script" />
+		<link
+			rel="preload"
+			href="/fonts/bricolage.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link rel="stylesheet" media="all" href="/stylesheets/styles.css" />
+		<script src="/scripts/engine.js" defer></script>
+		<title>COMPSCI 732: Blurple Canvas Web</title>
+	</head>
+	<body>
+		<main>
+			<div>
+				<picture>
+					<source srcset="/assets/logotype~dark.svg" type="image/svg+xml" />
+					<img decoding="async" src="/assets/logotype~dark.svg" />
+				</picture>
+			</div>
 
-      <div>
-        <h1>Blurple Canvas Web</h1>
-        <p>Aaron, Emily, Henry, Jasper, Josh & Sam</p>
-      </div>
+			<div>
+				<h1>Blurple Canvas Web</h1>
+				<p>Aaron, Emily, Henry, Jasper, Josh & Sam</p>
+			</div>
 
-      <div>
-        <picture>
-          <source srcset="/assets/recent-canvases.png" type="image/png" />
-          <img decoding="async" src="/assets/recent-canvases.png" />
-        </picture>
-      </div>
+			<div>
+				<picture>
+					<source srcset="/assets/recent-canvases.png" type="image/png" />
+					<img decoding="async" src="/assets/recent-canvases.png" />
+				</picture>
+			</div>
 
-      <div>
-        <video
-          playsinline
-          autoplay
-          controls
-          crossorigin
-          disablepictureinpicture
-          muted
-          preload
-        >
-          <source src="/assets/timelapse-2024-hevc.mp4" type="video/mp4" />
-          <source src="/assets/timelapse-2024.webm" type="video/webm" />
-          <source src="/assets/timelapse-2024.mp4" type="video/mp4" />
-        </video>
-      </div>
+			<div>
+				<video
+					playsinline
+					autoplay
+					controls
+					crossorigin
+					disablepictureinpicture
+					muted
+					preload
+				>
+					<source src="/assets/timelapse-2024-hevc.mp4" type="video/mp4" />
+					<source src="/assets/timelapse-2024.webm" type="video/webm" />
+					<source src="/assets/timelapse-2024.mp4" type="video/mp4" />
+				</video>
+			</div>
 
-      <div>
-        <style>
-          @scope {
-            ul {
-              --flow-space: 0;
-              font-size: var(--s-2);
-              opacity: 50%;
-              block-size: 100%;
-              inline-size: 100%;
-              position: absolute;
-            }
-            li {
-              position: absolute;
-              inset-block-start: 50%;
-              inset-inline-start: 50%;
-              translate: -50% -50%;
-            }
-          }
-        </style>
-        <h2>Tooling</h2>
-        <ul role="list">
-          <li style="transform: translate(0, -2rem)">Biome</li>
-          <li style="transform: translate(4rem, 4.5rem)">branch protections</li>
-          <li style="transform: translate(-2rem, 1.5rem)">Docker</li>
-          <li style="transform: translate(6rem, 2.5rem)">GitHub Actions</li>
-          <li style="transform: translate(-3.5rem, 3.5rem)">Husky</li>
-          <li style="transform: translate(7rem, -0.5rem)">monorepo</li>
-          <li style="transform: translate(-7rem, -1.5rem)">pnpm</li>
-          <li style="transform: translate(-8rem, 2.5rem)">Prettier</li>
-          <li style="transform: translate(5rem, -3.5rem)">Supertest</li>
-          <li style="transform: translate(-5rem, -4rem)">Vitest</li>
-        </ul>
-      </div>
+			<div>
+				<picture>
+					<source srcset="/assets/hey-guy.png" type="image/png" />
+					<img
+						decoding="async"
+						src="/assets/hey-guy.png"
+						style="image-rendering: crisp-edges"
+					/>
+				</picture>
+			</div>
 
-      <!-- Slide 5 -->
-      <div>
-        <picture>
-          <source srcset="/assets/ci.avif" type="image/avif" />
-          <source srcset="/assets/ci.png" type="image/png" />
-          <img decoding="async" src="/assets/ci.png" />
-        </picture>
-      </div>
-    </main>
-    <div class="indicator" aria-hidden></div>
-    <div class="cursor-resting-area" aria-hidden></div>
-  </body>
+			<div>
+				<style>
+					@scope {
+						ul {
+							--flow-space: 0;
+							font-size: var(--s-2);
+							opacity: 50%;
+							block-size: 100%;
+							inline-size: 100%;
+							position: absolute;
+						}
+						li {
+							position: absolute;
+							inset-block-start: 50%;
+							inset-inline-start: 50%;
+							translate: -50% -50%;
+						}
+					}
+				</style>
+				<h2>Tooling</h2>
+				<ul role="list">
+					<li style="transform: translate(0, -2rem)">Biome</li>
+					<li style="transform: translate(4rem, 4.5rem)">branch protections</li>
+					<li style="transform: translate(-2rem, 1.5rem)">Docker</li>
+					<li style="transform: translate(6rem, 2.5rem)">GitHub Actions</li>
+					<li style="transform: translate(-3.5rem, 3.5rem)">Husky</li>
+					<li style="transform: translate(7rem, -0.5rem)">monorepo</li>
+					<li style="transform: translate(-7rem, -1.5rem)">pnpm</li>
+					<li style="transform: translate(-8rem, 2.5rem)">Prettier</li>
+					<li style="transform: translate(5rem, -3.5rem)">Supertest</li>
+					<li style="transform: translate(-5rem, -4rem)">Vitest</li>
+				</ul>
+			</div>
+
+			<div>
+				<picture>
+					<source srcset="/assets/ci.avif" type="image/avif" />
+					<source srcset="/assets/ci.png" type="image/png" />
+					<img decoding="async" src="/assets/ci.png" />
+				</picture>
+			</div>
+		</main>
+		<div class="indicator" aria-hidden></div>
+		<div class="cursor-resting-area" aria-hidden></div>
+	</body>
 </html>
