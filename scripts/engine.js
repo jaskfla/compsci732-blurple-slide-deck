@@ -231,6 +231,12 @@ function onKeyDown(event) {
 			flashIndicator();
 			event.preventDefault();
 			return;
+
+		case "?":
+			window.open(
+				"https://github.com/jaskfla/compsci732-blurple-slide-deck/?tab=readme-ov-file#%EF%B8%8F-using-the-thing"
+			);
+			return;
 	}
 }
 
