@@ -356,9 +356,9 @@
 	 */
 	.cursor-resting-area {
 		background: transparent;
-		block-size: 20vmin;
+		block-size: 10vmin;
 		cursor: none;
-		inline-size: 20vmin;
+		inline-size: 10vmin;
 		inset-block-end: 0;
 		inset-inline-end: 0;
 		position: absolute;
