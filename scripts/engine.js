@@ -167,7 +167,7 @@ function getCurrentSlideId() {
 	return slideEls[currentSlideNumber].getAttribute("data-slide-id");
 }
 
-/*
+/**
  * Flash an indicator (confirming to the presenter an action, e.g. pressing
  * a secret keyboard shortcut, has taken place)
  */
