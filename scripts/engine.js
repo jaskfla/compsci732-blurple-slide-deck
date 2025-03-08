@@ -70,8 +70,8 @@ function onSlideEnter(slideEl, instant) {
 		slideEl.querySelector("input")?.focus();
 	}
 
-	slideEl.getAttribute("onslideenter") &&
-		eval(slideEl.getAttribute("onslideenter"));
+	const onEnter = slideEl.dataset.onSlideEnter;
+	onEnter && eval(onEnter);
 
 	// Play animations if any
 	const els = slideEl.querySelectorAll(".animate-on-enter:not(.animate)");
