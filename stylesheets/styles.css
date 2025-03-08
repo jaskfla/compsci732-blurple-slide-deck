@@ -216,7 +216,7 @@
 			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
 		--font-monospace: ui-monospace, monospace;
 
-		--ratio: 1.2;
+		--ratio: 1.25;
 		--s-6: calc(1rem * pow(var(--ratio), -6));
 		--s-5: calc(1rem * pow(var(--ratio), -5));
 		--s-4: calc(1rem * pow(var(--ratio), -4));
@@ -243,12 +243,28 @@
 		font-family: var(--font-body);
 		letter-spacing: 0.02em;
 		/* Terrible a11y! Never do this on a website */
-		font-size: max(6.5vmin, 150%);
+		font-size: max(7vmin, 150%);
 		font-weight: 450;
 	}
 
 	::selection {
 		background-color: transparent;
+	}
+
+	a {
+		color: inherit;
+		display: inline-block; /* Enable transform */
+		text-decoration-color: transparent;
+		text-decoration-line: none;
+		transform: scale(1);
+		transition-property: text-decoration-color, text-shadow, transform;
+		transition: 250ms ease;
+		&:hover {
+			text-decoration-color: oklch(from currentcolor l c h / 30%);
+			text-decoration-line: underline;
+			text-shadow: 0 0 0.5em var(--discord-blurple);
+			transform: scale(102%);
+		}
 	}
 
 	code,
