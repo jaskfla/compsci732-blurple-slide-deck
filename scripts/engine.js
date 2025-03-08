@@ -60,13 +60,6 @@ function onSlidePreEnter(slideEl) {
 
 /** Prepare the slide that just became visible */
 function onSlideEnter(slideEl, instant) {
-	// Play video if it’s on the slide
-	if (slideEl.querySelector("video")) {
-		const el = slideEl.querySelector("video");
-		el.load();
-		el.play();
-	}
-
 	// Doing it again, even though we did it in onSlidePreEntry, so that the presenter can safely
 	// refresh
 	loadIframes(slideEl);
