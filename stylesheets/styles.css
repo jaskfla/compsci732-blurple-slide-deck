@@ -390,8 +390,17 @@
 	main > div {
 		/* Single figure */
 		&:has(
-				> :is(
-						audio,
+				> :only-child:is(canvas, embed, iframe, img, object, picture, video)
+			) {
+			:is(canvas, embed, iframe, img, object, video) {
+				object-fit: contain;
+				object-position: center;
+			}
+		}
+
+		/* Two figures */
+		&:has(
+				> :nth-child(2):last-child:is(
 						canvas,
 						embed,
 						iframe,
@@ -399,12 +408,10 @@
 						object,
 						picture,
 						video
-					):only-child
+					)
 			) {
-			:is(audio, canvas, embed, iframe, img, object, video) {
-				object-fit: contain;
-				object-position: center;
-			}
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }
