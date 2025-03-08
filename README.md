@@ -18,7 +18,7 @@ Just opening `index.html` ain’t gonna work; absolute links will start at root 
 
 ## 🗣️ Using the thing
 
-- Advance slide or backtrack one slide with
+- Advance or backtrack one slide with
   - <kbd>↓</kbd>&thinsp;<kbd>↑</kbd>
   - <kbd>→</kbd>&thinsp;<kbd>←</kbd>
   - <kbd>j</kbd>&thinsp;<kbd>k</kbd>
