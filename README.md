@@ -2,7 +2,7 @@
 
 _Thursday 13&nbsp;March 2025_
 
-## 🦸 Getting up and running
+## ⏰ Getting up and running
 
 It’s just straight HTML, CSS and JavaScript.
 
@@ -27,3 +27,7 @@ Just opening `index.html` ain’t gonna work; absolute links will start at root 
   - <kbd>space</kbd>&thinsp;<kbd>backspace</kbd>
 - Go directly to the first slide with <kbd>home</kbd>
 - Go directly to the last slide with <kbd>end</kbd>
+
+## 🦸 Acknowledgements
+
+Thanks to Marcin Wichary. The the JavaScript engine used here is adapted from the [accompanying code](https://github.com/mwichary/The-rectangle-behind-you) for his series [The rectangle behind you](https://medium.com/the-rectangle-behind-you/the-rectangle-behind-you-103179fcfc32).
