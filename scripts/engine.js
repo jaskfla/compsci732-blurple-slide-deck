@@ -182,6 +182,7 @@ function flashIndicator() {
 
 function onKeyDown(event) {
 	if (document.activeElement !== document.body) return;
+	if (event.metaKey || event.altKey) return;
 
 	switch (event.key) {
 		case " ":
