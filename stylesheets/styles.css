@@ -287,12 +287,12 @@
 		block-size: 100vb;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		inline-size: 100%;
 		inset-block-start: 0;
 		inset-inline-start: 0;
 		overflow: hidden;
+		place-content: center;
+		place-items: center;
 		padding-bottom: calc(
 			1.5 * max(env(safe-area-inset-bottom), var(--_padding))
 		);
