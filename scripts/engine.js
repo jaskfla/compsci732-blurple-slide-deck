@@ -176,7 +176,7 @@ function flashIndicator() {
 
 	window.setTimeout(
 		() => document.querySelector(".indicator").classList.remove("👀"),
-		200,
+		200
 	);
 }
 
@@ -185,6 +185,10 @@ function onKeyDown(event) {
 
 	switch (event.key) {
 		case " ":
+			(event.shiftKey ? prevSlide : nextSlide)();
+			event.preventDefault();
+			return;
+
 		case "ArrowDown":
 		case "ArrowRight":
 		case "j":
