@@ -27,7 +27,7 @@
 		hyphenate-limit-chars: auto 2 3;
 		interpolate-size: allow-keywords;
 		letter-spacing: 0;
-		line-height: 1.5;
+		line-height: 1.25;
 		margin: 0;
 		orphans: 2;
 		overflow-wrap: break-word;
@@ -80,7 +80,7 @@
 	h4,
 	h5,
 	h6 {
-		line-height: 1.15;
+		line-height: 1.05;
 	}
 	code,
 	kbd,
