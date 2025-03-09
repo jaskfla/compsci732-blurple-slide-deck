@@ -273,6 +273,21 @@
 		font-family: var(--font-monospace);
 	}
 
+	figure {
+		display: grid;
+		grid-template-areas: "--figure" "--caption";
+		grid-template-rows: 1fr auto;
+		place-items: center;
+		justify-items: center;
+
+		> figcaption {
+			grid-area: --caption;
+			font-size: var(--s-1);
+			font-weight: 500;
+			opacity: 55%;
+		}
+	}
+
 	h1 {
 		font-size: var(--s3);
 	}

@@ -184,14 +184,62 @@
 
 			<div>
 				<picture>
-					<source srcset="/assets/ci.avif" type="image/avif" />
-					<source srcset="/assets/ci.png" type="image/png" />
+					<source src="/assets/ci.avif" type="image/avif" />
+					<source src="/assets/ci.png" type="image/png" />
 					<img decoding="async" src="/assets/ci.png" />
 				</picture>
 			</div>
 
 			<div>
-				<h2>Deployment</h2>
+				<!--<h2>Deployment</h2>-->
+				<style>
+					@scope {
+						& {
+							display: grid;
+							gap: var(--s-6) var(--s0);
+							grid-template-columns: repeat(2, minmax(0, 1fr));
+							grid-template-rows: 1fr auto;
+						}
+						figure {
+							grid-row: 1 / -1;
+							grid-template-columns: subgrid;
+							grid-template-rows: subgrid;
+						}
+						img {
+							width: 30vmin;
+						}
+					}
+				</style>
+				<figure>
+					<picture>
+						<source src="/assets/caddy-logo.svg" type="image/svg+xml" />
+						<img
+							decoding="async"
+							src="/assets/caddy-logo.svg"
+							width="114"
+							height="114"
+						/>
+					</picture>
+					<figcaption>
+						<a href="https://caddyserver.com" target="_blank">Caddy</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<picture>
+						<source src="/assets/docker-compose-logo.png" type="image/png" />
+						<img
+							decoding="async"
+							src="/assets/docker-compose-logo.png"
+							width="144	"
+							height="144	"
+						/>
+					</picture>
+					<figcaption>
+						<a href="https://docs.docker.com/compose" target="_blank"
+							>Docker Compose</a
+						>
+					</figcaption>
+				</figure>
 			</div>
 
 			<div>
