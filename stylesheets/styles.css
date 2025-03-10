@@ -88,6 +88,7 @@
 	samp {
 		font-family: ui-monospace, monospace;
 		hyphens: none;
+		letter-spacing: -0.02em;
 		text-align: start;
 		word-spacing: normal;
 		word-wrap: normal;
@@ -211,11 +212,13 @@
 		--discord-legacy-actually-black: black;
 
 		--ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
-		--font-body: "Bricolage Grotesque", system-ui, -apple-system,
+		--font-body: system-ui, -apple-system, BlinkMacSystemFont, Inter, "Segoe UI",
+			Roboto, Ubuntu, sans-serif;
+		--font-display: "Bricolage Grotesque", system-ui, -apple-system,
 			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
-		--font-monospace: ui-monospace, monospace;
+		--font-mono: ui-monospace, monospace;
 
-		--ratio: 1.2;
+		--ratio: 1.33333333;
 		--s-6: calc(1rem * pow(var(--ratio), -6));
 		--s-5: calc(1rem * pow(var(--ratio), -5));
 		--s-4: calc(1rem * pow(var(--ratio), -4));
@@ -242,7 +245,7 @@
 		font-family: var(--font-body);
 		letter-spacing: 0.02em;
 		/* Terrible a11y! Never do this on a website */
-		font-size: max(6.5vmin, 150%);
+		font-size: max(5.5vmin, 150%);
 		font-weight: 450;
 	}
 
@@ -270,7 +273,7 @@
 	kbd,
 	pre,
 	samp {
-		font-family: var(--font-monospace);
+		font-family: var(--font-mono);
 	}
 
 	figure {
@@ -286,6 +289,15 @@
 			font-weight: 500;
 			opacity: 55%;
 		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-display);
 	}
 
 	h1 {
@@ -327,7 +339,7 @@
 		padding-top: max(env(safe-area-inset-top), var(--_padding));
 		position: absolute;
 		text-align: center;
-		transition: opacity 200ms ease;
+		/* transition: opacity 200ms ease; */
 
 		&:not(.👀) {
 			overflow: hidden;
@@ -355,7 +367,7 @@
 
 	:is(blockquote, code, h1, h2, h2, h3, h4, h5, h6, label, li, ol, p, q, ul) {
 		& + & {
-			margin-block-start: var(--flow-space, 0.64em);
+			margin-block-start: var(--flow-space, 1em);
 		}
 	}
 
@@ -429,7 +441,7 @@
 			) {
 			display: grid;
 			gap: var(--s0);
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
 		/* Heading and figure */
@@ -456,9 +468,14 @@
 			align-items: stretch;
 			display: grid;
 			gap: var(--s0);
-			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-columns: minmax(0, 3fr) minmax(0, 4fr);
 			justify-items: stretch;
 			text-align: start;
+
+			> :is(h2, h3) {
+				font-size: unset;
+				line-height: unset;
+			}
 
 			> :is(ul, ol) {
 				margin-block-start: 0;
