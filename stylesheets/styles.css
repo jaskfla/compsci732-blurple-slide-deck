@@ -27,7 +27,7 @@
 		hyphenate-limit-chars: auto 2 3;
 		interpolate-size: allow-keywords;
 		letter-spacing: 0;
-		line-height: 1.25;
+		line-height: 1.2;
 		margin: 0;
 		orphans: 2;
 		overflow-wrap: break-word;
@@ -215,7 +215,7 @@
 			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
 		--font-monospace: ui-monospace, monospace;
 
-		--ratio: 1.25;
+		--ratio: 1.2;
 		--s-6: calc(1rem * pow(var(--ratio), -6));
 		--s-5: calc(1rem * pow(var(--ratio), -5));
 		--s-4: calc(1rem * pow(var(--ratio), -4));
@@ -242,7 +242,7 @@
 		font-family: var(--font-body);
 		letter-spacing: 0.02em;
 		/* Terrible a11y! Never do this on a website */
-		font-size: max(7vmin, 150%);
+		font-size: max(6.5vmin, 150%);
 		font-weight: 450;
 	}
 
@@ -355,7 +355,7 @@
 
 	:is(blockquote, code, h1, h2, h2, h3, h4, h5, h6, label, li, ol, p, q, ul) {
 		& + & {
-			margin-block-start: var(--flow-space, 0.4096em);
+			margin-block-start: var(--flow-space, 0.64em);
 		}
 	}
 
