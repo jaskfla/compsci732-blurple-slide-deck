@@ -261,12 +261,25 @@
 		text-decoration-line: none;
 		transform: scale(1);
 		transition: 250ms ease;
-		transition-property: text-decoration-color, text-shadow, transform;
+		transition-property: text-shadow, transform;
+		&::after {
+			content: "↗";
+			display: inline-block;
+			font-size: 0.4em;
+			color: oklch(from currentcolor l c h / 15%);
+			text-shadow: none;
+			vertical-align: super;
+			translate: 0 -0.5em;
+			transition: 250ms ease;
+			transition-property: color transform;
+		}
 		&:hover {
-			text-decoration-color: oklch(from currentcolor l c h / 30%);
-			text-decoration-line: underline;
 			text-shadow: 0 0 0.5em var(--discord-blurple);
 			transform: scale(102%);
+		}
+		&:hover::after {
+			color: oklch(from var(--discord-blurple) l c h / 55%);
+			transform: translate(0.15em, -0.15em);
 		}
 	}
 
