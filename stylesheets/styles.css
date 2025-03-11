@@ -255,6 +255,7 @@
 
 	a {
 		color: inherit;
+		border-radius: 0.1875em;
 		display: inline-block; /* Enable transform */
 		text-decoration-color: transparent;
 		text-decoration-line: none;
@@ -339,7 +340,6 @@
 		padding-top: max(env(safe-area-inset-top), var(--_padding));
 		position: absolute;
 		text-align: center;
-		/* transition: opacity 200ms ease; */
 
 		&:not(.👀) {
 			overflow: hidden;
@@ -362,6 +362,10 @@
 		> iframe {
 			block-size: 100%;
 			inline-size: 100%;
+		}
+
+		&:has(a:hover) a:not(:hover) {
+			text-shadow: 0 0 0.5em oklch(from var(--discord-white) l c h / 55%);
 		}
 	}
 
