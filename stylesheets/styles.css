@@ -322,7 +322,6 @@
 	}
 
 	main > div {
-		--_padding: 1rem;
 		block-size: 100vb;
 		display: flex;
 		flex-direction: column;
@@ -332,12 +331,10 @@
 		overflow: hidden;
 		place-content: center;
 		place-items: center;
-		padding-bottom: calc(
-			1.5 * max(env(safe-area-inset-bottom), var(--_padding))
-		);
-		padding-left: max(env(safe-area-inset-left), var(--_padding));
-		padding-right: max(env(safe-area-inset-right), var(--_padding));
-		padding-top: max(env(safe-area-inset-top), var(--_padding));
+		padding-bottom: calc(max(env(safe-area-inset-bottom), var(--s1)));
+		padding-left: max(env(safe-area-inset-left), var(--s2));
+		padding-right: max(env(safe-area-inset-right), var(--s2));
+		padding-top: max(env(safe-area-inset-top), var(--s0));
 		position: absolute;
 		text-align: center;
 
