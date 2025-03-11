@@ -310,6 +310,10 @@
 	h3 {
 		font-size: var(--s1);
 	}
+
+	s {
+		opacity: 55%;
+	}
 }
 
 @layer slides {
