@@ -45,6 +45,123 @@
 				<h1>Who tf are we?</h1>
 			</div>
 
+			<div>
+				<style>
+					@scope {
+						--flow-space: 0;
+						ul {
+							display: grid;
+							gap: var(--s1) var(--s-6);
+							grid-template-columns: repeat(2, minmax(0, 14rem));
+							grid-template-rows: repeat(3, minmax(0, 1fr));
+							text-align: start;
+							@media (orientation: portrait) {
+								grid-template-columns: initial;
+								row-gap: var(--s0);
+							}
+						}
+						li {
+							align-content: center;
+							display: grid;
+							gap: var(--s-6) var(--s-3);
+							grid-template-columns: minmax(0, 1fr) minmax(0, 3.5fr);
+							img {
+								border-radius: calc(infinity * 1px);
+								@media (orientation: portrait) {
+									max-width: 10dvh;
+								}
+							}
+							div {
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+							}
+							h3 {
+								font-size: var(--s0);
+							}
+							p {
+								font-size: var(--s-1);
+								grid-area: --title;
+								opacity: 55%;
+							}
+						}
+					}
+				</style>
+				<ul role="list">
+					<li>
+						<picture>
+							<source srcset="/assets/portraits/aaron.avif" type="image/avif" />
+							<source srcset="/assets/portraits/aaron.webp" type="image/webp" />
+							<img aria-hidden src="/assets/portraits/aaron.webp" />
+						</picture>
+						<div>
+							<h3>Aaron</h3>
+							<p>Imposter</p>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="/assets/portraits/emily.jpg" type="image/jpeg" />
+							<img aria-hidden src="/assets/portraits/emily.jpg" />
+						</picture>
+						<div>
+							<h3>Emily</h3>
+							<p>NZ betrayer</p>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="/assets/portraits/henry.webp" type="image/webp" />
+							<source srcset="/assets/portraits/henry.jpg" type="image/jpeg" />
+							<img aria-hidden src="/assets/portraits/henry.jpg" />
+						</picture>
+						<div>
+							<h3>Henry</h3>
+							<p>Jobless 10× enggnerr</p>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source
+								srcset="/assets/portraits/jasper.avif"
+								type="image/avif"
+							/>
+							<source
+								srcset="/assets/portraits/jasper.webp"
+								type="image/webp"
+							/>
+							<img aria-hidden src="/assets/portraits/jasper.webp" />
+						</picture>
+						<div>
+							<h3>Jasper</h3>
+							<p>Font nerd</p>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="/assets/portraits/josh.avif" type="image/avif" />
+							<source srcset="/assets/portraits/josh.webp" type="image/webp" />
+							<img aria-hidden src="/assets/portraits/josh.webp" />
+						</picture>
+						<div>
+							<h3>Josh</h3>
+							<p>Java wizard</p>
+						</div>
+					</li>
+					<li>
+						<picture>
+							<source srcset="/assets/portraits/sam.avif" type="image/avif" />
+							<source srcset="/assets/portraits/sam.webp" type="image/webp" />
+							<img aria-hidden src="/assets/portraits/sam.webp" />
+						</picture>
+						<div>
+							<h3>Sam</h3>
+							<p>This whole project is his fault</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
 			<div style="background-color: var(--discord-blurple)">
 				<picture>
 					<source src="/assets/recent-canvases.png" type="image/png" />
