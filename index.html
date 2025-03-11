@@ -353,10 +353,6 @@
 			</div>
 
 			<div>
-				<h2>Project management</h2>
-			</div>
-
-			<div>
 				<h2>Design & architecture</h2>
 			</div>
 
@@ -367,6 +363,7 @@
 				</picture>
 			</div>
 
+			<!-- Consider a11y -->
 			<div>
 				<style>
 					@scope {
@@ -400,6 +397,7 @@
 				</picture>
 			</div>
 
+			<!-- Teck stack -->
 			<div>
 				<picture>
 					<source src="/assets/architecture.svg" type="image/svg+xml" />
@@ -413,6 +411,7 @@
 				</picture>
 			</div>
 
+			<!-- Tooling -->
 			<div class="custom-template">
 				<style>
 					@scope {
@@ -477,6 +476,7 @@
 				</ul>
 			</div>
 
+			<!-- Continuous integration -->
 			<div>
 				<picture>
 					<source src="/assets/ci.avif" type="image/avif" />
@@ -485,8 +485,8 @@
 				</picture>
 			</div>
 
+			<!-- Deployment -->
 			<div>
-				<!--<h2>Deployment</h2>-->
 				<style>
 					@scope {
 						& {
@@ -535,6 +535,46 @@
 						>
 					</figcaption>
 				</figure>
+			</div>
+
+			<div>
+				<h2>Project management</h2>
+			</div>
+
+			<div>
+				<picture>
+					<source src="/assets/github-issues.png" type="image/png" />
+					<img
+						decoding="async"
+						src="/assets/github-issues.png"
+						width="2052"
+						height="1212"
+					/>
+				</picture>
+			</div>
+
+			<div>
+				<style>
+					@scope {
+						.badge {
+							background-color: rgba(83, 25, 231, 0.18);
+							block-size: 1.66666667em;
+							border-radius: calc(infinity * 1px);
+							border: 0.08333333em solid rgba(219, 207, 250, 0.3);
+							color: white;
+							font-size: var(--s3);
+							font-weight: 500;
+							letter-spacing: 0.02em;
+							line-height: 1.5;
+							padding-inline: 0.66666667em;
+							place-content: center;
+							text-align: center;
+							text-box-edge: cap alphabetic;
+							text-box-trim: trim-both;
+						}
+					}
+				</style>
+				<div class="badge">not in proposal</div>
 			</div>
 
 			<!-- Lifecycle of a PR -->
