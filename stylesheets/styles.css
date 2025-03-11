@@ -220,6 +220,9 @@
 		--font-display: "Bricolage Grotesque", system-ui, -apple-system,
 			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
 		--font-mono: ui-monospace, monospace;
+		--highlight-shadow: oklch(100% 0 0 / 8%) 0 0 0 0.0625rem,
+			oklch(100% 0 0 / 4%) 0 0.125rem 0.125rem 0;
+		--rounded: calc(infinity * 1px);
 
 		--ratio: 1.33333333;
 		--s-6: calc(1rem * pow(var(--ratio), -6));
@@ -374,8 +377,7 @@
 			border-radius: var(--s0);
 			block-size: 100%;
 			inline-size: 100%;
-			box-shadow: oklch(100% 0 0 / 8%) 0 0 0 0.0625rem,
-				oklch(100% 0 0 / 4%) 0 0.125rem 0.125rem 0;
+			box-shadow: var(--highlight-shadow);
 		}
 
 		&:has(a:hover) a:not(:hover) {
@@ -409,7 +411,7 @@
 		background-color: var(--discord-yellow);
 		block-size: 12px;
 		border: 1px solid oklch(100% 0 0 / 50%);
-		border-radius: calc(infinity * 1px);
+		border-radius: var(--rounded);
 		inset-block-start: calc(env(safe-area-inset-left, 0) + var(--s1));
 		inset-inline-start: calc(env(safe-area-inset-top, 0) + var(--s1));
 		position: absolute;

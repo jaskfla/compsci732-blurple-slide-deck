@@ -63,9 +63,8 @@
 							gap: var(--s-6) var(--s-3);
 							grid-template-columns: minmax(0, 1fr) minmax(0, 3.5fr);
 							img {
-								box-shadow: oklch(100% 0 0 / 8%) 0 0 0 0.0625rem,
-									oklch(100% 0 0 / 4%) 0 0.125rem 0.125rem 0;
-								border-radius: calc(infinity * 1px);
+								box-shadow: var(--highlight-shadow);
+								border-radius: var(--rounded);
 								@media (orientation: portrait) {
 									max-width: 10dvh;
 								}
@@ -587,10 +586,10 @@
 			<div>
 				<style>
 					@scope {
-						& {
+						.grid {
 							display: grid;
-							gap: var(--s-6) var(--s0);
-							grid-template-columns: repeat(2, minmax(0, 1fr));
+							gap: var(--s-6) var(--s2);
+							grid-template-columns: repeat(3, minmax(0, 1fr));
 							grid-template-rows: 1fr auto;
 						}
 						figure {
@@ -599,40 +598,59 @@
 							grid-template-rows: subgrid;
 						}
 						img {
-							width: 30vmin;
+							width: 40vmin;
 						}
 					}
 				</style>
-				<figure>
-					<picture>
-						<source src="/assets/caddy-logo.svg" type="image/svg+xml" />
-						<img
-							decoding="async"
-							src="/assets/caddy-logo.svg"
-							width="114"
-							height="114"
-						/>
-					</picture>
-					<figcaption>
-						<a href="https://caddyserver.com" target="_blank">Caddy</a>
-					</figcaption>
-				</figure>
-				<figure>
-					<picture>
-						<source src="/assets/docker-compose-logo.png" type="image/png" />
-						<img
-							decoding="async"
-							src="/assets/docker-compose-logo.png"
-							width="144"
-							height="144"
-						/>
-					</picture>
-					<figcaption>
-						<a href="https://docs.docker.com/compose" target="_blank"
-							>Docker Compose</a
-						>
-					</figcaption>
-				</figure>
+				<div class="grid">
+					<figure>
+						<picture>
+							<source src="/assets/caddy-logo.svg" type="image/svg+xml" />
+							<img
+								decoding="async"
+								src="/assets/caddy-logo.svg"
+								width="114"
+								height="114"
+							/>
+						</picture>
+						<figcaption>
+							<a href="https://caddyserver.com" target="_blank">Caddy</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<picture>
+							<source src="/assets/docker-compose-logo.png" type="image/png" />
+							<img
+								decoding="async"
+								src="/assets/docker-compose-logo.png"
+								width="144"
+								height="144"
+							/>
+						</picture>
+						<figcaption>
+							<a href="https://docs.docker.com/compose" target="_blank"
+								>Docker Compose</a
+							>
+						</figcaption>
+					</figure>
+					<figure>
+						<picture>
+							<source src="/assets/rats-nest.webp" type="image/webp" />
+							<img
+								src="/assets/rats-nest.webp"
+								style="
+									aspect-ratio: 1;
+									border-radius: var(--rounded);
+									box-shadow: var(--highlight-shadow);
+									object-fit: cover;
+								"
+								width="600"
+								height="800"
+							/>
+						</picture>
+						<figcaption>This rats’ nest</figcaption>
+					</figure>
+				</div>
 			</div>
 
 			<div>
@@ -661,7 +679,7 @@
 					@scope {
 						.badge {
 							background-color: oklch(46.93% 0.266 281.67 / 18%);
-							border-radius: calc(infinity * 1px);
+							border-radius: var(--rounded);
 							border: 0.08333333em solid oklch(from currentcolor l c h / 30%);
 							color: oklch(87.79% 0.0599 297.93);
 							font-size: var(--s3);
