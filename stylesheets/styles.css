@@ -121,6 +121,9 @@
 		max-width: 100%;
 		vertical-align: middle; /* If `display` value is overridden */
 	}
+	iframe {
+		border: 0;
+	}
 	img {
 		background-repeat: no-repeat; /* If providing low-res preview via `style` attribute */
 		background-size: cover;
@@ -294,8 +297,9 @@
 		display: grid;
 		grid-template-areas: "--figure" "--caption";
 		grid-template-rows: 1fr auto;
-		place-items: center;
 		justify-items: center;
+		place-items: center;
+		row-gap: var(--s-2);
 		figcaption {
 			grid-area: --caption;
 			font-size: var(--s-1);
@@ -366,15 +370,12 @@
 			pointer-events: auto;
 		}
 
-		> :is(iframe, img) {
-			inset-block-start: 0;
-			inset-inline-start: 0;
-			position: absolute;
-		}
-
-		> iframe {
+		iframe {
+			border-radius: var(--s0);
 			block-size: 100%;
 			inline-size: 100%;
+			box-shadow: oklch(100% 0 0 / 8%) 0 0 0 0.0625rem,
+				oklch(100% 0 0 / 4%) 0 0.125rem 0.125rem 0;
 		}
 
 		&:has(a:hover) a:not(:hover) {
