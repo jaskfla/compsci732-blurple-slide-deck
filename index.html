@@ -362,21 +362,13 @@
 						ul {
 							list-style-type: none;
 						}
-
-						[aria-hidden] {
-							/* 
-							 * We want to visually hide it, but keep it physically present so that 
-							 * spacing is consistent across the slides.
-							 */
-							opacity: 0;
-						}
 					}
 				</style>
 
 				<h2>Assigning roles…</h2>
 				<ul>
 					<li>Divide the team into front- and back-end</li>
-					<li aria-hidden>No fixed roles</li>
+					<li style="visibility: hidden">No fixed roles</li>
 				</ul>
 			</div>
 
