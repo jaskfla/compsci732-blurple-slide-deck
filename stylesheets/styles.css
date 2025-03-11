@@ -283,8 +283,7 @@
 		grid-template-rows: 1fr auto;
 		place-items: center;
 		justify-items: center;
-
-		> figcaption {
+		figcaption {
 			grid-area: --caption;
 			font-size: var(--s-1);
 			font-weight: 500;
@@ -419,6 +418,7 @@
 				> :not(style):first-of-type:last-of-type:is(
 						canvas,
 						embed,
+						figure,
 						iframe,
 						img,
 						object,
@@ -437,6 +437,7 @@
 				> :not(style):nth-of-type(2):last-of-type:is(
 						canvas,
 						embed,
+						figure,
 						iframe,
 						img,
 						object,
