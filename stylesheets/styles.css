@@ -515,6 +515,9 @@
 }
 
 @layer utility {
+	.dim {
+		opacity: 55%;
+	}
 	span.supplement {
 		font-size: 1ex;
 		opacity: 55%;
