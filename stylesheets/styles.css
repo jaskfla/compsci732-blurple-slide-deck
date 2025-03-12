@@ -100,6 +100,7 @@
 		inline-size: max-content;
 	}
 	abbr {
+		font-variant-caps: all-small-caps;
 		text-decoration: none;
 	}
 	hr {
