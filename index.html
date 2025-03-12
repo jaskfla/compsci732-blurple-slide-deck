@@ -103,7 +103,7 @@
 							p {
 								font-size: var(--s-1);
 								grid-area: --title;
-								opacity: 55%;
+								color: oklch(from currentcolor l c h / 55%);
 							}
 						}
 					}
@@ -138,7 +138,19 @@
 						</picture>
 						<div>
 							<h3><a href="https://henryh.wang" target="_blank">Henry</a></h3>
-							<p>Jobless 10× enggnerr</p>
+							<p>
+								Jobless
+								<img
+									src="/assets/jobless.png"
+									style="
+										box-shadow: unset;
+										display: inline;
+										translate: 0 -0.1em;
+										width: 1em;
+									"
+								/>
+								10× enggnerr
+							</p>
 						</div>
 					</li>
 					<li>
