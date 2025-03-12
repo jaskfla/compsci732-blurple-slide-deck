@@ -220,7 +220,7 @@
 		--font-display: "Bricolage Grotesque", system-ui, -apple-system,
 			BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Ubuntu, sans-serif;
 		--font-mono: ui-monospace, monospace;
-		--highlight-shadow: oklch(100% 0 0 / 8%) 0 0 0 0.0625rem,
+		--highlight-shadow: oklch(100% 0 0 / 8%) 0 0 0 0.03125rem,
 			oklch(100% 0 0 / 4%) 0 0.125rem 0.125rem 0;
 		--rounded: calc(infinity * 1px);
 
