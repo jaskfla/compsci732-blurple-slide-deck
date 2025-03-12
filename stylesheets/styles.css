@@ -518,6 +518,9 @@
 	.dim {
 		opacity: 55%;
 	}
+	.dim span {
+		visibility: hidden;
+	}
 	span.supplement {
 		font-size: 1ex;
 		opacity: 55%;
