@@ -889,7 +889,6 @@
 			<div>
 				<h2>Some quickfire ramblings</h2>
 			</div>
-
 			<div>
 				<h2>Snoop around, look at others’…</h2>
 				<ul role="list">
@@ -932,7 +931,13 @@
 				<h2>Everyone should code review</h2>
 			</div>
 			<div>
-				<h2>About <abbr>ECSE</abbr> capstone…</h2>
+				<h2>
+					About
+					<abbr title="Electronics, Computer and Software Engineering"
+						>ECSE</abbr
+					>
+					capstone…
+				</h2>
 			</div>
 			<div>
 				<picture>
@@ -966,19 +971,20 @@
 							}
 						}
 						.secondary {
-							opacity: 75%;
+							color: oklch(from currentcolor l c h / 75%);
 						}
 						.tertiary {
-							opacity: 45%;
+							color: oklch(from currentcolor l c h / 45%);
 						}
 					}
 				</style>
 				<h2>Questions?</h2>
 				<ul role="list">
-					<li>
+					<li class="tertiary">
 						<a href="https://biomejs.dev" target="_blank">Biome</a>
 					</li>
-					<li class="secondary">can we steal your unused ideas?</li>
+					<li>branch protections</li>
+					<li class="secondary">can we use your unused ideas?</li>
 					<li class="tertiary">
 						<a href="https://eslint.org" target="_blank">ESLint</a>
 					</li>
