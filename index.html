@@ -164,9 +164,11 @@
 			<div>
 				<style>
 					@scope {
-						li::before {
-							content: attr(data-emoji);
-							margin-inline-end: 0.5em;
+						@media not (orientation: portrait) {
+							li::before {
+								content: attr(data-emoji);
+								margin-inline-end: 0.5em;
+							}
 						}
 					}
 				</style>
