@@ -513,3 +513,10 @@
 		}
 	}
 }
+
+@layer utility {
+	span.supplement {
+		font-size: 1ex;
+		opacity: 55%;
+	}
+}
