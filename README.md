@@ -27,6 +27,7 @@ Just opening `index.html` ain’t gonna work; absolute links will start at root 
   - <kbd>space</kbd>&thinsp;<kbd>backspace</kbd>
 - Go directly to the first slide with <kbd>home</kbd>
 - Go directly to the last slide with <kbd>end</kbd>
+- Open this README with <kbd>?</kbd>
 
 ## 🦸 Acknowledgements
 
