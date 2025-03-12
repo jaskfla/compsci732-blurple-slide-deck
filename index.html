@@ -817,26 +817,36 @@
 						text-align: start;
 						li {
 							--flow-space: 0;
+							font-weight: 500;
 							line-height: 1.75;
 							display: inline-block;
 							& + &::before {
 								content: "/ ";
 								opacity: 12%;
+								margin-inline: 0.25ch;
 							}
+						}
+						.secondary {
+							opacity: 75%;
+						}
+						.tertiary {
+							opacity: 45%;
 						}
 					}
 				</style>
 				<h2>Questions?</h2>
 				<ul role="list">
-					<li><a href="https://biomejs.dev" target="_blank">Biome</a></li>
-					<li>can we steal your unused ideas?</li>
-					<li><a href="https://eslint.org" target="_blank">ESLint</a></li>
 					<li>
+						<a href="https://biomejs.dev" target="_blank">Biome</a>
+					</li>
+					<li class="secondary">can we steal your unused ideas?</li>
+					<li><a href="https://eslint.org" target="_blank">ESLint</a></li>
+					<li class="tertiary">
 						<a href="https://github.com/typicode/husky#readme" target="_blank"
 							>Husky</a
 						>
 					</li>
-					<li>
+					<li class="tertiary">
 						<a
 							href="https://github.com/lint-staged/lint-staged#readme"
 							target="_blank"
@@ -846,12 +856,12 @@
 					<li>
 						<a href="https://monorepo.tools" target="_blank">monorepos</a>
 					</li>
-					<li>
+					<li class="secondary">
 						<a href="https://pnpm.io" target="_blank">pnpm</a>
 					</li>
 					<li>pre-commit hooks</li>
 					<li><a href="https://prettier.io" target="_blank">Prettier</a></li>
-					<li>
+					<li class="secondary">
 						<a href="https://www.stacking.dev" target="_blank">stacked PRs</a>
 					</li>
 					<li>
@@ -859,26 +869,26 @@
 							>styled-components</a
 						>
 					</li>
-					<li>
+					<li class="tertiary">
 						<a href="https://github.com/ladjs/supertest#readme" target="_blank"
 							>Supertest</a
 						>
 					</li>
 					<li>tabs vs spaces</li>
-					<li>time tracking</li>
+					<li class="tertiary">time tracking</li>
 					<li>
 						<a href="https://www.typescriptlang.org" target="_blank"
 							>TypeScript</a
 						>
 					</li>
-					<li>
+					<li class="secondary">
 						<a
 							href="https://heydonworks.com/article/what-is-utility-first-css"
 							target="_blank"
 							>why Tailwind sucks</a
 						>
 					</li>
-					<li>
+					<li class="tertiary">
 						<a href="https://yarnpkg.com" target="_blank">Yarn</a>
 					</li>
 				</ul>
