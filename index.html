@@ -820,10 +820,10 @@
 							font-weight: 500;
 							line-height: 1.75;
 							display: inline-block;
-							& + &::before {
-								content: "/ ";
-								opacity: 12%;
+							&:not(:last-of-type)::after {
+								content: " /";
 								margin-inline: 0.25ch;
+								opacity: 12%;
 							}
 						}
 						.secondary {
