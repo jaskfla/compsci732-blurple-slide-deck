@@ -38,6 +38,28 @@
 			</div>
 
 			<div>
+				<style>
+					@scope {
+						&::before {
+							background-image: url("/assets/Golden Giraffes.webp");
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							content: "";
+							filter: opacity(33%);
+							height: 100%;
+							left: 0;
+							position: absolute;
+							top: 0;
+							width: 100%;
+							z-index: calc(-1);
+						}
+						> h1,
+						> p {
+							text-shadow: 0 0 1rem var(--discord-legacy-dark-but-not-black);
+						}
+					}
+				</style>
 				<h1>Who tf are we?</h1>
 				<p class="dim">Golden Giraffes, <em>apparently</em></p>
 			</div>
