@@ -810,21 +810,77 @@
 				<h2>If it isn’t documented…</h2>
 			</div>
 
-			<div>
+			<div class="custom-template">
 				<style>
 					@scope {
-						h2,
+						align-items: stretch;
+						text-align: start;
 						li {
+							--flow-space: 0;
+							line-height: 1.75;
 							display: inline-block;
-						}
-						ul {
-							display: contents;
+							& + &::before {
+								content: "/ ";
+								opacity: 12%;
+							}
 						}
 					}
 				</style>
 				<h2>Questions?</h2>
 				<ul role="list">
-					<li></li>
+					<li><a href="https://biomejs.dev" target="_blank">Biome</a></li>
+					<li>can we steal your unused ideas?</li>
+					<li><a href="https://eslint.org" target="_blank">ESLint</a></li>
+					<li>
+						<a href="https://github.com/typicode/husky#readme" target="_blank"
+							>Husky</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/lint-staged/lint-staged#readme"
+							target="_blank"
+							>lint-staged</a
+						>
+					</li>
+					<li>
+						<a href="https://monorepo.tools" target="_blank">monorepos</a>
+					</li>
+					<li>
+						<a href="https://pnpm.io" target="_blank">pnpm</a>
+					</li>
+					<li>pre-commit hooks</li>
+					<li><a href="https://prettier.io" target="_blank">Prettier</a></li>
+					<li>
+						<a href="https://www.stacking.dev" target="_blank">stacked PRs</a>
+					</li>
+					<li>
+						<a href="https://styled-components.com" target="_blank"
+							>styled-components</a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/ladjs/supertest#readme" target="_blank"
+							>Supertest</a
+						>
+					</li>
+					<li>tabs vs spaces</li>
+					<li>time tracking</li>
+					<li>
+						<a href="https://www.typescriptlang.org" target="_blank"
+							>TypeScript</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://heydonworks.com/article/what-is-utility-first-css"
+							target="_blank"
+							>why Tailwind sucks</a
+						>
+					</li>
+					<li>
+						<a href="https://yarnpkg.com" target="_blank">Yarn</a>
+					</li>
 				</ul>
 			</div>
 
