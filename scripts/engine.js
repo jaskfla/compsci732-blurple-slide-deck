@@ -233,9 +233,7 @@ function onKeyDown(event) {
 			return;
 
 		case "?":
-			window.open(
-				"https://github.com/jaskfla/compsci732-blurple-slide-deck/?tab=readme-ov-file#%EF%B8%8F-using-the-thing"
-			);
+			window.open("https://github.com/jaskfla/compsci732-blurple-slide-deck");
 			return;
 	}
 }
