@@ -357,8 +357,8 @@
 		}
 	}
 
-	main > div {
-		block-size: 100vb;
+	.slide {
+		block-size: 100dvb;
 		display: flex;
 		flex-direction: column;
 		inline-size: 100%;
@@ -441,7 +441,7 @@
 }
 
 @layer slide-templates {
-	main > div:not(.custom-template) {
+	.slide:not(.custom-template) {
 		/* Single figure */
 		&:has(
 				> :not(style):first-of-type:last-of-type:is(

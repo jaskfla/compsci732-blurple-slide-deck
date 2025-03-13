@@ -13,7 +13,7 @@ let skipLessImportantSlides = false;
 let slideEls;
 
 function showSlide() {
-	const els = document.querySelectorAll("main > div.👀");
+	const els = document.querySelectorAll(".slide.👀");
 	for (const el of els) el.classList.remove("👀");
 
 	slideEls[currentSlideNumber].classList.add("👀");
@@ -242,7 +242,7 @@ function onKeyDown(event) {
 
 /** Main presentation entry (requested as DOM loads) */
 function main() {
-	slideEls = document.querySelectorAll("main > div");
+	slideEls = document.querySelectorAll(".slide");
 
 	// Set up
 	getSlideNumberFromUrlFragment();
