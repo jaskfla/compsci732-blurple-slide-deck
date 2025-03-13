@@ -67,7 +67,9 @@
 			<div class="slide">
 				<style>
 					@scope {
-						--flow-space: 0;
+						& {
+							--flow-space: 0;
+						}
 						ul {
 							display: grid;
 							gap: var(--s1) var(--s-6);
@@ -1000,8 +1002,10 @@
 			<div class="custom-template slide">
 				<style>
 					@scope {
-						align-items: stretch;
-						text-align: start;
+						& {
+							align-items: stretch;
+							text-align: start;
+						}
 						li {
 							--flow-space: 0;
 							font-weight: 500;
